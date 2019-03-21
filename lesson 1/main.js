@@ -17,7 +17,7 @@ const renderProduct = (product) => {
     return `<div class="good">
                 <div class="good-img"></div>
                 <p class="description">${product.title}</p>
-                <p class="price">${product.price}</p>
+                <p class="price">$${product.price}</p>
                 <button class="addToCart">Добавить в корзину</button>
             </div>`
 }
