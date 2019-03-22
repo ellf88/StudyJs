@@ -1,6 +1,5 @@
 @margin: 0 auto;
 @width: 1024px;
-@height: 200px;
 .container {
     margin: @margin;
     width: @width;
@@ -30,31 +29,53 @@
 }
 
 .good {
-   height: @height;
-    width: @width/6-20;
     text-align: center;  
     border: 1px solid red;
     margin-top: 30px;
+    transition: all 0.5s;
+}
+
+.good:hover {
+    border-color: green;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.good:hover .price{
+   color: hotpink;
 }
 
 .good-img {
-    border: 1px solid black;
-    height: @height/2;
-    width: @width/6-50;
     margin-left: 14px;
     margin-top: 10px;
+    margin-right: 14px;
 }
 
 .description {
     margin: 0px;
-    margin-top: 10px;
 }
 
 .price {
     margin: 0px;
-    margin-top: 10px;
+    transition: 0.5s;
 }
 
 .addToCart {
+    height: 30px;
     margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-bottom: 3px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px black;
+    transition: all 0.3s;
+}
+
+.addToCart:hover {
+    cursor: pointer;
+    color: greenyellow;
+    background-color: mediumvioletred;
+}
+
+.addToCart:active {
+    box-shadow: none;
 }
