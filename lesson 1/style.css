@@ -25,27 +25,45 @@
   margin-right: 10px;
 }
 .good {
-  height: 200px;
-  width: 150.66666667px;
   text-align: center;
   border: 1px solid red;
   margin-top: 30px;
+  transition: all 0.5s;
+}
+.good:hover {
+  border-color: green;
+  box-shadow: 1px 1px 1px 1px;
+}
+.good:hover .price {
+  color: hotpink;
 }
 .good-img {
-  border: 1px solid black;
-  height: 100px;
-  width: 120.66666667px;
   margin-left: 14px;
   margin-top: 10px;
+  margin-right: 14px;
 }
 .description {
   margin: 0px;
-  margin-top: 10px;
 }
 .price {
   margin: 0px;
-  margin-top: 10px;
+  transition: 0.5s;
 }
 .addToCart {
+  height: 30px;
   margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-bottom: 3px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px black;
+  transition: all 0.3s;
+}
+.addToCart:hover {
+  cursor: pointer;
+  color: greenyellow;
+  background-color: mediumvioletred;
+}
+.addToCart:active {
+  box-shadow: none;
 }
