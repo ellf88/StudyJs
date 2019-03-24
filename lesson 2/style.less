@@ -1,0 +1,60 @@
+@margin: 0 auto;
+@width: 1024px;
+@height: 200px;
+.container {
+    margin: @margin;
+    width: @width;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;    
+}
+
+.header {
+    margin: @margin;
+    width: @width;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    background-color: #ccc;
+}
+
+.cart {
+    background-color: white;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.good {
+   height: @height;
+    width: @width/6-20;
+    text-align: center;  
+    border: 1px solid red;
+    margin-top: 30px;
+}
+
+.good-img {
+    border: 1px solid black;
+    height: @height/2;
+    width: @width/6-50;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.description {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.price {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.addToCart {
+    margin-top: 5px;
+}
