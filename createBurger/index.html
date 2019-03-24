@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Burger</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="subcontainer">
+            <form action="#" id="burger-form">
+            <h4 id="humburger-head">Собрать бургер</h4>
+            <fieldset class="burger-fieldset-inside">
+                <h4>Выбрать размер бургера</h4>
+                <input type="radio" checked name="size" id="bigburger" value="Big" class="burger-input" data-price="100" data-callories="40">
+                <label for="bigburger">Большой (100 рублей, 50 каллорий)</label>
+                <input type="radio" name="size" id="smallburger" value="Small" class="burger-input" data-price="50" data-callories="20">
+                <label for="smallburger">Маленький (50 рублей, 20 каллорий)</label>
+                <h4>Выбрать начинку для бургера</h4>
+                <input type="radio" checked name="filling" id="cheese" value="Cheeze" class="burger-input" data-price="10" data-callories="20">
+                <label for="cheese">Добавить сыр (10 рублей, 20 каллорий)</label>
+                <input type="radio" name="filling" id="salat" value="Salat" class="burger-input" data-price="20" data-callories="5">
+                <label for="salat">Добавить салат (20 рублей, 5 каллорий)</label>
+                <input type="radio" name="filling" id="potato" value="Potato" class="burger-input" data-price="15" data-callories="10">
+                <label for="cheese">Добавить картошку (15 рублей, 10 каллорий)</label>            
+                <h4>Выберать дополнительную начинку</h4>
+                <input type="checkbox" checked name="additive" value="Seasoning" class="burger-input" data-price="15" data-callories="0">
+                <label for="seasoning">Посыпать приправой (15 рублей, 0 каллорий</label>
+                <input type="checkbox" checked name="additive" value="Mayo" class="burger-input" data-price="20" data-callories="5">
+                <label for="mayo">Добавить майонез (20 рублей, 5 каллорий</label>
+            </fieldset>
+        </form>
+        <div class="burger">Собрать бургер</div>
+        <p id="result">Итоговая стоимость: <span id="price">0</span> <br>
+            Количество каллорий: <span id="callories">0</span></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
